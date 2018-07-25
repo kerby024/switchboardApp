@@ -1,0 +1,3 @@
+<div *ngFor = 'let x of boxes, let i = index' [ngStyle]="{ 'margin-left': '10px', 'height': '75px', 'width': '75', 'display': 'inline-block', 'text-align':'center','padding':'15px','background-color': 'aqua'}" >
+    <button (click) = "onButtonClick(i)" [ngStyle]="{ 'height':'75px', 'width':'75px', 'display':'inline-block', 'background-color': x.color}">Button</button>
+</div>
